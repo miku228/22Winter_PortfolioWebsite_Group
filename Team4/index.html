@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="authur" content="Team4(Miku, Jiyoung, Shiki)">
+        <meta name="email" content="abe00004@algonquinlive.com">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/grid-landingPage.css">
+        <title>Recipes Landing</title>
+    </head>
+    <body class="grid-container">
+        <nav id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" >HOME</a>
+            <a href="loginout.html">Login/Logout</a>
+            <a href="contactUs.html">Contact Us</a>
+        </nav>
+        <header>
+            <!-- <div id="topHeader"> -->
+                <img class="logoimg" src="image/logo.jpg" alt="recipe website logo" title="referecned from https://www.vectorstock.com/royalty-free-vector/recipe-word-text-typography-design-logo-icon-vector-21127766" >
+                <h1>Recipe Books</h1>
+            <!-- </div> -->
+
+        </header>
+        <main id="main" style="margin-left:0px;">
+
+            <div id="mainNav">
+                <a href="javascript:void(0)" class="opennavbtn">☰</a>
+                <a href="index.html" class="mainN">HOME</a>
+                <!-- jiyoung added April 6,2022-->
+                <a href="#" class = "recipe-korean" >KOREAN RECIPES</a>   
+                <a href="#" class = "recipe-chinese" >CHINESE RECIPES</a>
+                <a href="#" class = "recipe-japanese" >JAPANESE RECIPES</a>
+           </div>
+           <div  id="contents">
+               <!---Add recipes/: korean, japanese, chinese-->
+               <h1 class="h1-title">Home</h1>
+               <section id="contents_top">
+                   <a href="loginout.html" id="login_status">
+                       <span id="logout_link">logout</span>
+                       <span id="login_link"> login</span>
+                   </a>
+               </section>
+
+
+               <div class="container_grid">
+   
+                   <div class="gallery_container add_span_2 add_span_row_2 ">
+                       <div class="gallery-items">
+                           <div class="food_image">
+                               <a href="detail.html" class="goto_detail">
+                               <!-- <a href="" class="goto_detail"> -->
+                                   <img>
+                               </a>
+                           </div>
+                           <div class="text food_name"></div>
+                       </div>
+                   </div>
+   
+                   <div class="gallery_container add_span_3 add_span_row_2">
+                       <div class="gallery-items">
+                           <div class="food_image">
+                                <a href="detail.html" class="goto_detail">
+                                    <img>
+                                </a>  
+                            </div>
+                           <div class="text food_name"></div>
+                       </div>
+                   </div>
+   
+                   <div class="gallery_container add_span_2">
+                       <div class="gallery-items">
+                           <div class="food_image">
+                               <a href="detail.html" class="goto_detail">
+                                   <img>
+                               </a>  
+                           </div>
+                           <div class="text food_name"></div>
+                       </div>
+                   </div>
+   <!-- rondom photos here -->
+                   <div class="gallery_container add_span_3">
+                       <div class="gallery-items">
+                           <div class="food_image">
+                               <a href="detail.html" class="goto_detail">
+                                <img>
+                               </a>
+                            </div>
+                           <div class="text food_name"></div>
+                       </div>
+                   </div>
+   
+                   <div class="gallery_container add_span_3">
+                       <div class="gallery-items">
+                           <div class="food_image">
+                               <a href="detail.html" class="goto_detail">
+                                <img>
+                               </a>  
+                           </div>
+                           <div class="text food_name"></div>
+                       </div>
+                   </div>
+   <!-- random photos here -->
+                   <div class="gallery_container add_span_2 add_span_row_3">
+                       <div class="gallery-items">
+                           <div class="food_image">
+                               <a href="detail.html" class="goto_detail">
+                                   <img>
+                               </a>  
+                            </div>
+                           <div class="text food_name"></div>
+                       </div>
+                   </div>
+   
+                   <div class="gallery_container add_span_3 add_span_row_2">
+                       <div class="gallery-items">
+                           <div class="food_image">
+                               <a href="detail.html" class="goto_detail">
+                                    <img>
+                               </a>  
+                            </div>
+                           <div class="text food_name"></div>
+                       </div>
+                   </div>
+   
+                   <div class="gallery_container add_span_2 add_span_row_2">
+                       <div class="gallery-items">
+                           <div class="food_image">
+                               <a href="detail.html" class="goto_detail">
+                                    <img>
+                               </a>
+                            </div>
+                           <div class="text food_name"></div>
+                       </div>
+                   </div>
+   
+                   <div class="gallery_container add_span_3 add_span_row_2">
+                       <div class="gallery-items">
+                           <div class="food_image">
+                               <a href="detail.html" class="goto_detail">
+                                    <img>
+                               </a>
+                            </div>
+                           <div class="text food_name"></div>
+                       </div>
+                   </div>
+               </div>
+        </div>
+        </main>
+        <footer>
+            <address>
+                123 Food Street<br>
+                Ottawa, Ontario
+            </address>
+                (613) 123-FOOD<br>
+                <a href="mailto: food@haveagoodfood.ca?subject=inquiry%20from%20website">
+                    food@haveagoodfood.ca</a>
+        </footer>
+        <script src="scripts/jquery-3.6.0.min.js"></script>
+        <script src="scripts/main.js"></script>
+        <!-- <script src="scripts/event.js"></script>   jiyoung added April 6,2022-->
+        <script src="scripts/landngpage.js"></script>
+    </body>
+</html>
+

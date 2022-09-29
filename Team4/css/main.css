@@ -1,0 +1,273 @@
+/* || General styles */
+/* body,p,he,h2,ul,table,links etc */
+body{
+    font-family: Frank Ruhl Libre,Georgia,serif;
+    color: #353535;
+    background-color: #FEFAE0;
+    text-align: center;
+    font-size: 16px;
+    /* jiyoung added April 3, 2022*/
+    /* display: grid;
+    grid-template-rows: auto minmax(30px, 1fr) auto 2fr;
+    grid-template-areas:
+            "topHeader topHeader topHeader",
+            "mainNav mainNav mainNav",
+            "content content content",
+            "foot foot foot"; */
+    /* jiyoung added April 3, 2022 */
+}
+/* added by miku April 6 2022 */
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  grid-gap: 5px;
+  padding: 5px;
+  justify-content: center;
+}
+
+/* jiyoung added April 3,2022 */
+/* #topHeader > img { */
+.logoimg {
+    width: 116px;
+    height: 76px;
+    float:left;
+    padding-left: 10px;
+    position: relative;
+}
+
+.underlogo {
+  margin-top:100px;
+}
+
+/* #topHeader > h1 {
+    float:: left;
+} */
+
+/* jiyoung added April 3, 2022 */
+/* #topHeader { */
+header {
+    /* grid-area: topHeader; */
+    grid-row: 1 / 2; /* added by miku April 6 2022 */
+    margin-top: 10px;
+    /* border: 2px solid black; */
+    /* height: 80px; */
+    position: relative;
+}
+
+
+header > span {
+  position: absolute;
+  left: 10px;
+  font-size: 2rem;
+}
+
+main {
+  /* grid-area: main; */
+  grid-row: 2 / 3; /* added by miku April 6 2022 */
+  display: grid;
+  grid-template-rows: minmax(30px, 1fr) auto ;
+  grid-gap: 5px;
+  padding: 5px;
+  justify-content: center;
+  /* border: 2px solid black; */
+}
+header h1{
+  text-shadow: 3px 4px 8px #7381f9;
+  font-family: fantasy;
+}
+/* jiyoung added April 3, 2022 */
+#mainNav {
+    /* grid-area: mainNav; */
+    grid-row: 1 / 2; /* added by miku April 6 2022 */
+    height: 40px;
+    display: flex;   /*Menu options */
+    flex-direction:row;  /*Menu options */
+    justify-content:space-around; /* Menu options*/
+    /* background-color:rgb(232, 232, 25);  Navigation Background color */
+    text-shadow: 3px 4px 8px #7381f9;
+    font-family: fantasy;
+}
+#mainNav a:hover{
+  background-color: #fbbb743b;
+  /* background-color: #ffdfdf; */
+}
+
+/* jiyoung added April 3, 2022 */
+#mainNav > a, #displayRecipe-container > p {
+    text-decoration: none;   /* delete underline on the menu oprions */
+    padding-top: 10px;
+    color: rgb(59, 48, 3);
+    font-weight: bold;
+    text-align: left;
+
+}
+
+/* jiyoung Added April 3, 2022 */
+#contents {
+    /* grid-area : contents; */
+    grid-row: 2 / 3;
+    /* border: 2px solid green; test */
+}
+
+/* #contents_top {
+  display: grid;
+  grid-template-columns:auto 5px ;
+  grid-gap: 5px;
+  padding: 5px;
+  justify-content: center;
+} */
+
+/* #contents_top > h1 {
+  grid-column: 1 / 2;
+}
+
+#contents_top > a {
+  grid-column: 2 / 3;
+} */
+
+/* jiyoung Added April 3, 2022*/
+/* #footer { */
+footer {
+    /* grid-area: foot; */
+    grid-row: 3 / 4; /* added by miku April 6 2022 */
+    text-align: right;
+    text-shadow: 3px 4px 8px #b3bafc;
+    font-family: fantasy;
+
+}
+
+/* displaying pictures in contents size */
+.pic {
+  width: 200px;
+  height: 200px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* displaying pictures flex */
+#displayRecipe-container {
+display: flex;   /*Menu options */
+flex-direction:row;  /*Menu options */
+justify-content:space-around; /* Menu options*/
+padding-bottom : 100px;
+
+}
+/* jiyoung Added April 3, 2022
+footer {
+    grid-area: foot;
+
+} */
+
+
+/* || Typography */
+
+
+
+/* || Header and Main Navigation */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.h1-title {
+  float: left;
+  width: 90%;
+  font-family: fantasy;
+}
+
+.h1-title_login {
+  float: left;
+  width: 100%;
+  font-family: fantasy;
+}
+
+
+#login_status {
+  text-decoration: none;
+  display: flex;
+  float: left;
+  width: 10%;
+ 
+}
+
+#logout_link, #login_link {
+  margin: 20px auto;
+  padding: 10px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: fantasy;
+  font-weight: bold;
+  /* border: 2px solid #f1e68fba;
+  background-color: #fdffd5; */
+  border: 2px solid #fbbb74;
+  background-color: #fbbb743b;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-color: #FEFAE0;
+  text-shadow: 3px 4px 8px #7381f9;
+  font-family: fantasy;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  /* font-size: 25px; */
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+/* for contact page error message */
+.errorRed {
+  color: red;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* || Mobile First */
+/*CSS for medium width screens*/
+@media (min-width: 480px) {
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    .sidenav {padding-top: 85px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*CSS for wide screens*/
+@media (min-width: 800px) {
+}
+
+/*CSS for really wide screens*/
+@media (min-width: 1100px) {
+}

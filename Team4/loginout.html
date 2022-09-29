@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authur" content="Team4(Miku, Jiyoung, Shiki)">
+    <meta name="email" content="abe00004@algonquinlive.com">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/loginlogout.css">
+    <title>Login / Logout</title>
+</head>
+<body>
+    <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closenavbtn">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="loginout.html">Login/Logout</a>
+        <a href="contactUs.html">Contact Us</a>
+        <!-- <span class="opennavbtn">☰</span> -->
+    </nav>
+    <header>
+        <span class="opennavbtn underlogo">☰</span>
+        <!-- <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closenavbtn">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="loginout.html">Login/Logout</a>
+        <a href="contactUs.html">Contact Us</a>
+        </nav>
+        <span class="opennavbtn">☰</span> -->
+        <a href="index.html">
+            <img class="logoimg" src="image/logo.jpg" alt="recipe website logo" title="referecned from https://www.vectorstock.com/royalty-free-vector/recipe-word-text-typography-design-logo-icon-vector-21127766">
+            <h1>Recipe Books</h1>
+        </a>
+    </header>
+    
+    <main>
+        <!-- <div id="mainNav">
+            <a href="javascript:void(0)" class="opennavbtn">☰</a>
+        </div> -->
+        <!-- please modify h2 too -->
+        <h1 class="h1-title_login">Login/Logout Form</h1>
+        <form id="loginform">
+            <section id="username">
+                <label for="username" class="label-name">Username</label>
+                <input type="text" name="username" autocomplete="off">
+                <span class="error"></span>
+            </section>
+            <section id="Password">
+                <label for="password" class="label-name">Password</label>
+                <input type="password" name="password" autocomplete="off">
+                <span class="error"></span>
+            </section>
+            <button id="login">Login</button>
+        </form>
+        <button id="logout">Logout</button>
+    </main>
+    <footer>
+      <address>
+         123 Food Street<br>
+         Ottawa, Ontario
+     </address>
+         (613) 123-FOOD<br>
+         <a href="mailto: food@haveagoodfood.ca?subject=inquiry%20from%20website">
+             food@haveagoodfood.ca</a>
+
+    </footer>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/loginlogout.js"></script>
+</body>
+</html>
